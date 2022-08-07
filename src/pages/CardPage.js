@@ -160,26 +160,28 @@ const CardPage = () => {
             }}
           />
         </Col>
-        {console.log(getStackLineChart({
-          labels: ['J', 'a'],
-          data: [0, 13000]
-        }))}
         <Col md={7}>
           <Card>
             <Line
-              data={getStackLineChart({
-                labels: [
-                  'January',
-                  'February',
-                  'March',
-                  'April',
-                  'May',
-                  'June',
-                  'July',
-                ],
-                data: [0, 13000, 5000, 24000, 16000, 25000, 10000],
-              })}
-              options={stackLineChartOptions}
+              data={ {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+                datasets: [
+                  {
+                    label: "First dataset",
+                    data: [33, 53, 85, 41, 44, 65],
+                    fill: true,
+                    backgroundColor: "rgba(75,192,192,0.2)",
+                    borderColor: "rgba(75,192,192,1)"
+                  },
+                  {
+                    label: "Second dataset",
+                    data: [33, 25, 35, 51, 54, 76],
+                    fill: false,
+                    borderColor: "#742774"
+                  }
+                ]
+              }}
+              // options={stackLineChartOptions}
             />
             <CardBody className="text-primary" style={{ position: 'absolute' }}>
               <CardTitle>Chart Card</CardTitle>
