@@ -1,0 +1,14 @@
+// colors
+
+.bg-gradient-theme {
+  background: linear-gradient(to bottom, map-get($theme-colors, 'primary'), map-get($theme-colors, 'secondary'));
+}
+.bg-gradient-theme-top {
+  background: linear-gradient(to top, map-get($theme-colors, 'primary'), map-get($theme-colors, 'secondary'));
+}
+.bg-gradient-theme-left {
+  background: linear-gradient(to left, map-get($theme-colors, 'primary'), map-get($theme-colors, 'secondary'));
+}
+.bg-gradient-theme-right {
+  background: linear-gradient(to right, map-get($theme-colors, 'primary'), map-get($theme-colors, 'secondary'));
+}
